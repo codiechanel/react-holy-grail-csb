@@ -15,7 +15,7 @@ class App extends React.Component<any, any> {
   render() {
     return (
       <div>
-        welcome the best hey
+        welcome the best hey now
         <Hello />
       </div>
     );
