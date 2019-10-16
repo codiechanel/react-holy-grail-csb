@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ui, { FlexColumn, MembersPanel } from "../common/UI";
 
 interface ItemsProps {
   keyword?: any;
@@ -22,13 +23,13 @@ const List1: React.SFC<ItemsProps> = ({ keyword, history }) => {
   }, []);
 
   return (
-    <ul>
+    <ui.List>
       {data.hits.map(item => (
         <li key={item.objectID}>
           <a href={item.url}>{item.title}</a>
         </li>
       ))}
-    </ul>
+    </ui.List>
   );
 };
 export default List1;

@@ -1,11 +1,15 @@
 // import styled from 'styled-components'
 import styled from "@emotion/styled";
 
-export const List = styled.div`
+export const List = styled.ul`
+  /* hide the bullet */
+  list-style-type: none;
   flex: 1;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 `;
 export const Discover = styled.div`
   height: 100%;
@@ -52,11 +56,13 @@ export const RightPanel = styled.div`
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  /* padding-right: 20px; */
   overflow: auto;
 `;
 
 export const LeftPanel = styled.div`
   margin: 10px;
+  /* padding-right: 20px; */
   min-height: 0;
   min-width: 0;
   display: flex;

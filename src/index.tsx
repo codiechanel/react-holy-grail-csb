@@ -70,6 +70,15 @@ function App() {
       <>
         <Nav>
           <ui.LeftPanel>
+            <button
+              onClick={() => {
+                console.log(
+                  window.innerWidth - document.documentElement.clientWidth
+                );
+              }}
+            >
+              click
+            </button>
             <List1 keyword="redux" />
           </ui.LeftPanel>
         </Nav>

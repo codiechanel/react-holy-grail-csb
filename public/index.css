@@ -2,17 +2,22 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  /* display: flex;
   flex: 1;
   flex-direction: row;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
 }
 
 #root {
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: 100vw;
-  height: 100vh;
   background-color: aqua;
+  /* probably not needed */
+  /* width: 100vw;
+  height: 100vh; */
 }
