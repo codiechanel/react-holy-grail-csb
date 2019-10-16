@@ -6,10 +6,10 @@ class App extends React.Component<any, any> {
     super(props);
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
-    return "welcome surely";
+    return "welcome  the best ";
   }
 }
 
