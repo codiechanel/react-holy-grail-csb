@@ -10,7 +10,9 @@ class App extends React.Component<any, any> {
   //     super(props);
   //   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log("ckl");
+  }
 
   render() {
     return (
