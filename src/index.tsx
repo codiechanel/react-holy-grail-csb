@@ -2,22 +2,23 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 function Hello() {
-  return <div>hello</div>
+  return <div>hello</div>;
 }
 
 class App extends React.Component<any, any> {
-//   constructor(props) {
-//     super(props);
-//   }
+  //   constructor(props) {
+  //     super(props);
+  //   }
 
-  componentDidMount() { }
+  componentDidMount() {}
 
   render() {
-    return <div>
-      welcome  the best
-<Hello />
-
-    </div>;
+    return (
+      <div>
+        welcome the best hey
+        <Hello />
+      </div>
+    );
   }
 }
 
