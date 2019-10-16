@@ -34,3 +34,23 @@ a {
   color: white;
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  /* height: 12px;
+  width: 12px; */
+  /* background: gray; */
+  /* just tint the background */
+  background: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #40566f;
+  /* -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
+}
+
+/* no effect */
+::-webkit-scrollbar-corner {
+  /* background: #000; */
+  background: yellow;
+}

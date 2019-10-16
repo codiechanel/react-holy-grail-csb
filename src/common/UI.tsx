@@ -13,6 +13,9 @@ export const List = styled.ul`
   overflow-y: auto;
   padding-right: 20px;
   padding-left: 20px;
+  /* firefox only */
+  /* scrollbar-color: #40566f gray; */
+  scrollbar-color: #40566f rgba(0, 0, 0, 0.15);
 `;
 export const Discover = styled.div`
   height: 100%;
