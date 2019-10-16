@@ -1,6 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+function Hello() {
+  return <div>hello</div>
+}
+
 class App extends React.Component<any, any> {
   constructor(props) {
     super(props);
@@ -9,7 +13,11 @@ class App extends React.Component<any, any> {
   componentDidMount() { }
 
   render() {
-    return "welcome  the best ";
+    return <div>
+      welcome  the best
+<Hello />
+
+    </div>;
   }
 }
 
