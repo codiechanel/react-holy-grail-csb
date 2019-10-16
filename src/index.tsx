@@ -6,9 +6,9 @@ function Hello() {
 }
 
 class App extends React.Component<any, any> {
-  constructor(props) {
-    super(props);
-  }
+//   constructor(props) {
+//     super(props);
+//   }
 
   componentDidMount() { }
 
