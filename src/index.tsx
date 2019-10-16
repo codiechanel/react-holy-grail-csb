@@ -18,7 +18,6 @@ const Nav = styled.div`
   /* flex-basis: 100%; */
 
   display: flex;
-  // background-color: #191b22;
 
   flex-direction: column;
   align-items: stretch;
@@ -30,7 +29,6 @@ const Nav = styled.div`
 const Article = styled.div`
   flex: 2;
   /* flex-basis: 66%; */
-  // background-color: #191b22;
   flex-direction: column;
   align-items: stretch; /* align items in Cross Axis */
   display: flex;

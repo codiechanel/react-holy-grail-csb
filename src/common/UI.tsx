@@ -1,6 +1,9 @@
 // import styled from 'styled-components'
 import styled from "@emotion/styled";
 
+export const ListItem = styled.li`
+  margin-bottom: 10px;
+`;
 export const List = styled.ul`
   /* hide the bullet */
   list-style-type: none;
@@ -52,7 +55,7 @@ export const RightPanel = styled.div`
   flex-direction: row;
   min-height: 0;
   flex: 1;
-  background-color: yellowgreen;
+  background-color: #2f3437;
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -69,7 +72,7 @@ export const LeftPanel = styled.div`
   flex-direction: column;
   flex: 1;
   overflow: auto;
-  background-color: yellow;
+  background-color: #373c3f;
 `;
 export const Input = styled.input`
   /* color: black; */
@@ -90,6 +93,7 @@ export const Button = styled.button`
 `;
 const ui = {
   List,
+  ListItem,
   Discover,
   FlexColumn,
   MembersPanel,

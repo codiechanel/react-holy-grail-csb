@@ -25,9 +25,9 @@ const List1: React.SFC<ItemsProps> = ({ keyword, history }) => {
   return (
     <ui.List>
       {data.hits.map(item => (
-        <li key={item.objectID}>
+        <ui.ListItem key={item.objectID}>
           <a href={item.url}>{item.title}</a>
-        </li>
+        </ui.ListItem>
       ))}
     </ui.List>
   );
