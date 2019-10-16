@@ -1,24 +1,21 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
 class App extends React.Component<any, any> {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
-    return "welcome"
-
+    return "welcome surely";
   }
 }
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById("root")
   // <Hello compiler="TypeScript" framework="React" />,
   // document.getElementById("root")
-)
+);
