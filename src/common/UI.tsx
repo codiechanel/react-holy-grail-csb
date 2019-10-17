@@ -1,4 +1,3 @@
-// import styled from 'styled-components'
 import styled from "@emotion/styled";
 
 export const ListItem = styled.li`
@@ -67,16 +66,42 @@ export const RightPanel = styled.div`
 `;
 
 export const LeftPanel = styled.div`
-  margin: 10px;
-  /* padding-right: 20px; */
-  min-height: 0;
-  min-width: 0;
   display: flex;
   flex-direction: column;
   flex: 1;
   overflow: auto;
+  margin: 10px;
+  min-height: 0;
+  /* is this needed */
+  min-width: 0;
+
   background-color: #373c3f;
 `;
+
+type ButtonProp = {
+  primary?: string;
+  flexDirection: string;
+};
+
+const Panel = styled.div<ButtonProp>`
+  display: flex;
+  flex-direction: ${props => props.flexDirection};
+  flex: 1;
+
+  overflow: auto;
+  /* margin: 10px; */
+  min-height: 0;
+  min-width: 0;
+  /* scrollbar-color: #40566f rgba(0, 0, 0, 0.15); */
+  width: 100%;
+  height: 100%;
+`;
+
+// const Panel = styled.div(props: => ({
+//   display: "flex",
+//   flexDirection: props.column && "column"
+// }));
+
 export const Input = styled.input`
   /* color: black; */
   border: none;
@@ -103,6 +128,7 @@ const ui = {
   DetailsPanel,
   LeftPanel,
   RightPanel,
+  Panel,
   Input,
   Button
 };

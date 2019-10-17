@@ -3,6 +3,11 @@ import ui, { FlexColumn, MembersPanel } from "../common/UI";
 import List1 from "./List1";
 import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
+import styled from "@emotion/styled";
+const LeftPanel = styled(ui.Panel)`
+  background-color: #373c3f;
+  /* margin: 10px; */
+`;
 
 export default class LeftContainer extends React.Component {
   static propTypes = {
@@ -10,7 +15,7 @@ export default class LeftContainer extends React.Component {
   };
   render() {
     return (
-      <ui.LeftPanel>
+      <LeftPanel flexDirection="column">
         <ui.Button
           onClick={() => {
             console.log("hiuhk");
@@ -20,7 +25,8 @@ export default class LeftContainer extends React.Component {
           Right
         </ui.Button>
         <List1 keyword="redux" />
-      </ui.LeftPanel>
+        {/* </ui.LeftPanel> */}
+      </LeftPanel>
     );
   }
 }

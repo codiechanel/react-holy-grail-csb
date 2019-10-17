@@ -17,19 +17,26 @@ const HorizontalBox = styled.div`
   flex: 1;
 `;
 const Nav = styled.div`
+  margin: 0px;
+  padding: 0px;
   flex: 1;
-  /* flex-basis: 33%; */
+  /* this should be removed because it shouldn't handle the scrollbar */
   overflow: auto;
-  /* flex-basis: 100%; */
 
   display: flex;
-
   flex-direction: column;
+  /* flex-direction: row; */
   align-items: stretch;
   /* align items in Cross Axis */
   height: 100vh;
-  position: relative;
+  width: 100vw;
+  /* width: 100%; */
+
   /*height: 100%;*/
+
+  scrollbar-color: #40566f rgba(0, 0, 0, 0.15);
+  /* not sure */
+  /* position: relative; */
 `;
 const Article = styled.div`
   flex: 2;
@@ -64,10 +71,8 @@ function App() {
   let content = (
     <Nav>
       <Router>
-        {/* <Home path="/" /> */}
         <LeftContainer path="/" />
         <RightContainer path="/dashboard" />
-        {/* <Dashboard path="dashboard" /> */}
       </Router>
     </Nav>
   );
@@ -75,11 +80,15 @@ function App() {
   if (small) {
     content = (
       <>
-        {content}
+        <Nav>
+          <LeftContainer path="/" />
+        </Nav>
+        {/* {content} */}
         <Article>
-          <ui.RightPanel>
+          {/* <ui.RightPanel>
             <Members />
-          </ui.RightPanel>
+          </ui.RightPanel> */}
+          <RightContainer path="/dashboard" />
         </Article>
       </>
     );
