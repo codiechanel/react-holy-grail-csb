@@ -9,7 +9,7 @@ const LeftPanel = styled(ui.Panel)`
   /* margin: 10px; */
 `;
 
-export default class LeftContainer extends React.Component {
+export default class Home extends React.Component {
   static propTypes = {
     path: PropTypes.string
   };
@@ -18,8 +18,7 @@ export default class LeftContainer extends React.Component {
       <LeftPanel flexDirection="column">
         <ui.Button
           onClick={() => {
-            console.log("hiuhk");
-            navigate(`/dashboard`);
+            navigate(`dashboard`);
           }}
         >
           Right

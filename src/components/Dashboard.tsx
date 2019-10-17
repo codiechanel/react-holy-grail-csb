@@ -12,7 +12,7 @@ const RightPanel = styled(ui.Panel)`
   margin-bottom: 10px; */
 `;
 
-export default class RightContainer extends React.Component {
+export default class Dashboard extends React.Component {
   static propTypes = {
     path: PropTypes.string
   };

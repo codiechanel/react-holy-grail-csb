@@ -7,8 +7,8 @@ import List1 from "./components/List1";
 import Autocomplete from "./components/Autocomplete";
 import Members from "./components/Members";
 import { Router, Link } from "@reach/router";
-import LeftContainer from "./components/LeftContainer";
-import RightContainer from "./components/RightContainer";
+import Home from "./components/Home";
+import Dashboard from "./components/Dashboard";
 
 const HorizontalBox = styled.div`
   display: flex;
@@ -23,9 +23,9 @@ type NavProp = {
   flex: string;
 };
 
-const Nav = styled.div<NavProp>`
+const Section = styled.div<NavProp>`
   /* we are allowed margins here because we dont use 100 */
-  /* flex: 1; */
+  flex: 1;
   flex: ${props => props.flex};
   display: flex;
   /*  this needs to be a row 
@@ -33,12 +33,12 @@ const Nav = styled.div<NavProp>`
   its a flex default */
 `;
 
-const LeftSection = styled(Nav)`
+const LeftSection = styled(Section)`
   margin: 10px;
   background-color: rebeccapurple;
 `;
 
-const RightSection = styled(Nav)`
+const RightSection = styled(Section)`
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -65,8 +65,9 @@ function App() {
   let content = (
     <LeftSection flex="1">
       <Router>
-        <LeftContainer path="/" />
-        <RightContainer path="/dashboard" />
+        <Home path="/">
+          <Dashboard path="dashboard" />
+        </Home>
       </Router>
     </LeftSection>
   );
@@ -75,14 +76,10 @@ function App() {
     content = (
       <>
         <LeftSection flex="1">
-          <LeftContainer path="/" />
+          <Home path="/" />
         </LeftSection>
-        {/* {content} */}
         <RightSection flex="2">
-          {/* <ui.RightPanel>
-            <Members />
-          </ui.RightPanel> */}
-          <RightContainer path="/dashboard" />
+          <Dashboard />
         </RightSection>
       </>
     );
