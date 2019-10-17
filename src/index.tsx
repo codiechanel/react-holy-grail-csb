@@ -19,6 +19,18 @@ const HorizontalBox = styled.div`
 const Nav = styled.div`
   margin: 0px;
   padding: 0px;
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+`;
+const Nav2 = styled.div`
+  margin: 0px;
+  padding: 0px;
   flex: 1;
   /* this should be removed because it shouldn't handle the scrollbar */
   overflow: auto;
@@ -44,7 +56,11 @@ const Article = styled.div`
   flex-direction: column;
   align-items: stretch; /* align items in Cross Axis */
   display: flex;
+  /* I tried using vw and it broke the layout showing the scrollbar */
+  /* width: 100vw; */
   height: 100vh;
+  width: 100%;
+  height: 100%;
 `;
 
 function Hello() {
