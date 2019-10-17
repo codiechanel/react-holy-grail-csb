@@ -6,10 +6,10 @@ import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
 
 const RightPanel = styled(ui.Panel)`
-  background-color: #2f3437;
-  margin-top: 10px;
+  /* background-color: #2f3437; */
+  /* margin-top: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
 `;
 
 export default class Dashboard extends React.Component {

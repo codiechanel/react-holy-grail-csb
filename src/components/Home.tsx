@@ -5,8 +5,8 @@ import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
 const LeftPanel = styled(ui.Panel)`
-  background-color: #373c3f;
-  margin: 10px;
+  /* background-color: #373c3f; */
+  /* margin: 10px; */
 `;
 
 export default class Home extends React.Component {

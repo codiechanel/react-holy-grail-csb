@@ -36,14 +36,14 @@ const Section = styled.div<NavProp>`
 
 const LeftSection = styled(Section)`
   margin: 10px;
-  /* background-color: rebeccapurple; */
+  background-color: #373c3f;
 `;
 
 const RightSection = styled(Section)`
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  /* background-color: rebeccapurple; */
+  background-color: #2f3437;
 `;
 
 let useMedia = query => {
@@ -66,9 +66,8 @@ function App() {
   let content = (
     <LeftSection flex="1">
       <Router>
-        <Home path="/">
-          <Dashboard path="dashboard" />
-        </Home>
+        <Home path="/" />
+        <Dashboard path="dashboard" />
       </Router>
     </LeftSection>
   );
