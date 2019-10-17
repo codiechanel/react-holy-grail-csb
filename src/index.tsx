@@ -6,6 +6,9 @@ import ui, { FlexColumn, MembersPanel } from "./common/UI";
 import List1 from "./components/List1";
 import Autocomplete from "./components/Autocomplete";
 import Members from "./components/Members";
+import { Router, Link } from "@reach/router";
+import LeftContainer from "./components/LeftContainer";
+import RightContainer from "./components/RightContainer";
 const HorizontalBox = styled.div`
   display: flex;
   width: 100vw;
@@ -60,9 +63,12 @@ function App() {
   let large = useMedia("(min-width: 1000px)");
   let content = (
     <Nav>
-      <ui.LeftPanel>
-        <List1 keyword="redux" />
-      </ui.LeftPanel>
+      <Router>
+        {/* <Home path="/" /> */}
+        <LeftContainer path="/" />
+        <RightContainer path="/dashboard" />
+        {/* <Dashboard path="dashboard" /> */}
+      </Router>
     </Nav>
   );
   /* if screen is larger than 600, then lets display 2 panels */
