@@ -5,20 +5,13 @@ import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
 
-const RightPanel = styled(ui.Panel)`
-  /* background-color: #2f3437; */
-  /* margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px; */
-`;
-
 export default class Dashboard extends React.Component {
   static propTypes = {
     path: PropTypes.string
   };
   render() {
     return (
-      <RightPanel flexDirection="column">
+      <ui.Panel flexDirection="column">
         <ui.Button
           onClick={() => {
             navigate(`/`);
@@ -27,7 +20,7 @@ export default class Dashboard extends React.Component {
           Back
         </ui.Button>
         <List1 keyword="mobx" />
-      </RightPanel>
+      </ui.Panel>
     );
   }
 }

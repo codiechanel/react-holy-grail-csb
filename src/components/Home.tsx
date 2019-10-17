@@ -4,10 +4,6 @@ import List1 from "./List1";
 import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
-const LeftPanel = styled(ui.Panel)`
-  /* background-color: #373c3f; */
-  /* margin: 10px; */
-`;
 
 export default class Home extends React.Component {
   static propTypes = {
@@ -15,7 +11,7 @@ export default class Home extends React.Component {
   };
   render() {
     return (
-      <LeftPanel flexDirection="column">
+      <ui.Panel flexDirection="column">
         <ui.Button
           onClick={() => {
             navigate(`dashboard`);
@@ -24,8 +20,7 @@ export default class Home extends React.Component {
           Right
         </ui.Button>
         <List1 keyword="redux" />
-        {/* </ui.LeftPanel> */}
-      </LeftPanel>
+      </ui.Panel>
     );
   }
 }
