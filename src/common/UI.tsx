@@ -39,7 +39,7 @@ export const MembersPanel = styled.div`
   margin-right: 10px;
   margin-bottom: 10px;
   /* min-height: 0; */
-  background-color: white;
+  /* background-color: white; */
 `;
 export const DetailsPanel = styled.div`
   margin-top: 10px;

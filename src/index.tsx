@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import ui, { FlexColumn, MembersPanel } from "./common/UI";
 import List1 from "./components/List1";
+import Autocomplete from "./components/Autocomplete";
+import Members from "./components/Members";
 const HorizontalBox = styled.div`
   display: flex;
   width: 100vw;
@@ -63,26 +65,14 @@ function App() {
       </ui.LeftPanel>
     </Nav>
   );
+  /* if screen is larger than 600, then lets display 2 panels */
   if (small) {
     content = (
       <>
-        <Nav>
-          <ui.LeftPanel>
-            <button
-              onClick={() => {
-                console.log(
-                  window.innerWidth - document.documentElement.clientWidth
-                );
-              }}
-            >
-              click
-            </button>
-            <List1 keyword="redux" />
-          </ui.LeftPanel>
-        </Nav>
+        {content}
         <Article>
           <ui.RightPanel>
-            <List1 keyword="redux" />
+            <Members />
           </ui.RightPanel>
         </Article>
       </>
