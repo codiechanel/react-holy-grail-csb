@@ -17,11 +17,15 @@ const HorizontalBox = styled.div`
   flex: 1;
 `;
 const Nav = styled.div`
-  margin: 0px;
-  padding: 0px;
+  /* we are allowed margins here because we dont use 100 */
+  margin: 10px;
+  padding: 10px;
   background-color: rebeccapurple;
-  width: 100%;
-  height: 100%;
+  /* not really needed */
+  /* width: 100%;
+  height: 100%; */
+  /* width: 100vw;
+  height: 100vh; */
 
   flex: 1;
   display: flex;
@@ -51,21 +55,35 @@ const Nav2 = styled.div`
   /* position: relative; */
 `;
 const Article = styled.div`
+  /* we are allowed margins here because we dont use 100 */
+  margin: 10px;
+  padding: 10px;
+  background-color: rebeccapurple;
+  /* not really needed */
+  /* width: 100%;
+  height: 100%; */
+  /* width: 100vw;
+  height: 100vh; */
+
   flex: 2;
-  /* flex-basis: 66%; */
-  flex-direction: column;
-  align-items: stretch; /* align items in Cross Axis */
   display: flex;
+  /* flex-direction: row; */
+  flex-direction: column;
+`;
+const Article2 = styled.div`
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  /* align items in Cross Axis */
+  /* not really needed */
+  /* align-items: stretch;  */
+
   /* I tried using vw and it broke the layout showing the scrollbar */
   /* width: 100vw; */
-  height: 100vh;
-  width: 100%;
-  height: 100%;
+  /* height: 100vh; */
+  /* width: 100%;
+  height: 100%; */
 `;
-
-function Hello() {
-  return <div>hello</div>;
-}
 
 let useMedia = query => {
   let [matches, setMatches] = useState(window.matchMedia(query).matches);

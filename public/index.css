@@ -34,6 +34,14 @@ body {
   flex: 1;
 }
 
+#root {
+  display: flex;
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(95, 89, 102);
+}
+
 .container {
   margin: 0px;
   padding: 0px;
@@ -46,13 +54,6 @@ body {
   flex-direction: row;
   /* overflow: auto; */
   /* scrollbar-color: #40566f rgba(0, 0, 0, 0.15); */
-}
-
-#root {
-  display: flex;
-  flex: 1;
-  margin: 0px;
-  background-color: rgb(95, 89, 102);
 }
 
 #rootEx {
