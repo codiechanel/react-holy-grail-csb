@@ -19,12 +19,15 @@ export default class Home extends React.Component {
         >
           Right
         </ui.Button>
+        <ui.Button
+          onClick={() => {
+            navigate(`dashboard`);
+          }}
+        >
+          About
+        </ui.Button>
         <List1 keyword="redux" />
       </ui.Panel>
     );
   }
 }
-
-// LeftContainer.propTypes = {
-//     path: PropTypes.func,
-//   };

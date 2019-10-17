@@ -5,7 +5,7 @@ import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
 
-export default class Dashboard extends React.Component {
+export default class About extends React.Component {
   static propTypes = {
     path: PropTypes.string
   };
@@ -19,7 +19,7 @@ export default class Dashboard extends React.Component {
         >
           Back
         </ui.Button>
-        <List1 keyword="mobx" />
+        <div>About</div>
       </ui.Panel>
     );
   }
