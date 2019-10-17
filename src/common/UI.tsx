@@ -88,8 +88,8 @@ const Panel = styled.div<ButtonProp>`
   flex-direction: ${props => props.flexDirection};
   flex: 1;
 
-  overflow: auto;
-  /* margin: 10px; */
+  /* margin: 100px; */
+
   min-height: 0;
   min-width: 0;
   /* scrollbar-color: #40566f rgba(0, 0, 0, 0.15); */

@@ -28,6 +28,7 @@ const Section = styled.div<NavProp>`
   flex: 1;
   flex: ${props => props.flex};
   display: flex;
+  flex-direction: row;
   /*  this needs to be a row 
   but we dont have to declare it because 
   its a flex default */
@@ -35,14 +36,14 @@ const Section = styled.div<NavProp>`
 
 const LeftSection = styled(Section)`
   margin: 10px;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 `;
 
 const RightSection = styled(Section)`
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 `;
 
 let useMedia = query => {

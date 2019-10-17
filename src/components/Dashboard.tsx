@@ -7,9 +7,9 @@ import styled from "@emotion/styled";
 
 const RightPanel = styled(ui.Panel)`
   background-color: #2f3437;
-  /* margin-top: 10px;
+  margin-top: 10px;
   margin-right: 10px;
-  margin-bottom: 10px; */
+  margin-bottom: 10px;
 `;
 
 export default class Dashboard extends React.Component {
@@ -21,7 +21,6 @@ export default class Dashboard extends React.Component {
       <RightPanel flexDirection="column">
         <ui.Button
           onClick={() => {
-            console.log("hiuhk");
             navigate(`/`);
           }}
         >
