@@ -21,7 +21,7 @@ export default class Home extends React.Component {
         </ui.Button>
         <ui.Button
           onClick={() => {
-            navigate(`dashboard`);
+            navigate(`about`);
           }}
         >
           About

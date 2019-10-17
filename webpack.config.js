@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path");
 
 /* const autoprefixer = require('autoprefixer')
 const postCSSLoaderOptions = {
@@ -16,25 +16,29 @@ const postCSSLoaderOptions = {
 module.exports = {
   // plugins: [new BundleAnalyzerPlugin()],
   watch: true,
-  devtool: 'source-map',
-  mode: 'development',
-  entry: './src/index.tsx',
+  devtool: "source-map",
+  mode: "development",
+  entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "public"),
+    filename: "bundle.js"
+    // publicPath: "/public/"
   },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: [".ts", ".tsx", ".js", ".json"]
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.tsx?$/,
-        loader: 'ts-loader'
-      },
-
-    ],
-  },
+        loader: "ts-loader"
+      }
+    ]
+  }
+  // devServer: {
+  //   historyApiFallback: true
+  // }
   /* externals: {
     // react: 'React',
     // 'react-dom': 'ReactDOM',
@@ -42,4 +46,4 @@ module.exports = {
     // firebase: 'firebase',
     'chart.js': 'Chart',
   }, */
-}
+};

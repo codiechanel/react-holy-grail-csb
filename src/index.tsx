@@ -9,6 +9,7 @@ import Members from "./components/Members";
 import { Router, Link } from "@reach/router";
 import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
+import About from "./components/About";
 
 const HorizontalBox = styled.div`
   display: flex;
@@ -68,6 +69,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Dashboard path="dashboard" />
+        <About path="about" />
       </Router>
     </LeftSection>
   );
@@ -79,7 +81,10 @@ function App() {
           <Home path="/" />
         </LeftSection>
         <RightSection flex="2">
-          <Dashboard />
+          <Router primary={false} component={React.Fragment}>
+            <Dashboard default path="dashboard" />
+            <About path="about" />
+          </Router>
         </RightSection>
       </>
     );

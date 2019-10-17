@@ -7,7 +7,8 @@ import styled from "@emotion/styled";
 
 export default class Dashboard extends React.Component {
   static propTypes = {
-    path: PropTypes.string
+    path: PropTypes.string,
+    default: PropTypes.bool
   };
   render() {
     return (
