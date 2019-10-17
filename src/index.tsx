@@ -17,20 +17,15 @@ const HorizontalBox = styled.div`
   flex: 1;
 `;
 const Nav = styled.div`
+  background-color: rebeccapurple;
   /* we are allowed margins here because we dont use 100 */
   margin: 10px;
   padding: 10px;
-  background-color: rebeccapurple;
-  /* not really needed */
-  /* width: 100%;
-  height: 100%; */
-  /* width: 100vw;
-  height: 100vh; */
 
   flex: 1;
   display: flex;
+  /*  this needs to be a row */
   flex-direction: row;
-  /* flex-direction: column; */
 `;
 const Nav2 = styled.div`
   margin: 0px;
@@ -59,16 +54,13 @@ const Article = styled.div`
   margin: 10px;
   padding: 10px;
   background-color: rebeccapurple;
-  /* not really needed */
-  /* width: 100%;
-  height: 100%; */
-  /* width: 100vw;
-  height: 100vh; */
 
+  /* here we could use an arbitrary number based on screen size */
   flex: 2;
   display: flex;
-  /* flex-direction: row; */
-  flex-direction: column;
+  /* row or column works here */
+  flex-direction: row;
+  /* flex-direction: column; */
 `;
 const Article2 = styled.div`
   flex: 2;

@@ -1,35 +1,31 @@
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: lightseagreen;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: lightseagreen;
 
   display: flex;
   flex: 1;
-  /* flex-direction: row; */
-  margin: 0px;
-  padding: 0px;
   width: 100vw;
   height: 100vh;
-  /* flex-direction: column; */
+  /* it is necessary to use row */
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: gray;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100%;
-  /* width: 100vw;
-  height: 100vh; */
-  background-color: gray;
   display: flex;
   flex: 1;
 }
@@ -37,8 +33,7 @@ body {
 #root {
   display: flex;
   flex: 1;
-  margin: 0px;
-  padding: 0px;
+
   background-color: rgb(95, 89, 102);
 }
 
