@@ -5,23 +5,16 @@ import * as PropTypes from "prop-types";
 import { navigate } from "@reach/router";
 import styled from "@emotion/styled";
 
-export default class Dashboard extends React.Component {
-  static propTypes = {
-    path: PropTypes.string,
-    default: PropTypes.bool
-  };
-  render() {
-    return (
-      <ui.Panel flexDirection="column">
-        <ui.Button
-          onClick={() => {
-            navigate(`/`);
-          }}
-        >
-          Back
-        </ui.Button>
-        <List1 keyword="mobx" />
-      </ui.Panel>
-    );
-  }
+Dashboard.propTypes = {
+  path: PropTypes.string,
+  default: PropTypes.bool
+};
+export default function Dashboard() {
+  return (
+    <ui.Panel flexDirection="row">
+      <List1 keyword="typescript" />
+
+      <List1 keyword="javascript" />
+    </ui.Panel>
+  );
 }

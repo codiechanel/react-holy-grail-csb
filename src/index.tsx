@@ -10,6 +10,7 @@ import { Router, Link } from "@reach/router";
 import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
 import About from "./components/About";
+import NewsList from "./components/NewsList";
 
 const HorizontalBox = styled.div`
   display: flex;
@@ -68,8 +69,7 @@ function App() {
     <LeftSection flex="1">
       <Router>
         <Home default path="/" />
-        <Dashboard path="dashboard" />
-        <About path="about" />
+        <NewsList path="news" />
       </Router>
     </LeftSection>
   );
