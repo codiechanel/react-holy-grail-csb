@@ -67,7 +67,7 @@ function App() {
   let content = (
     <LeftSection flex="1">
       <Router>
-        <Home path="/" />
+        <Home default path="/" />
         <Dashboard path="dashboard" />
         <About path="about" />
       </Router>
@@ -78,7 +78,7 @@ function App() {
     content = (
       <>
         <LeftSection flex="1">
-          <Home path="/" />
+          <Home default path="/" />
         </LeftSection>
         <RightSection flex="2">
           <Router primary={false} component={React.Fragment}>

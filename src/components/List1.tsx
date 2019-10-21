@@ -5,10 +5,9 @@ import ui, { FlexColumn, MembersPanel } from "../common/UI";
 
 interface ItemsProps {
   keyword?: any;
-  history?: any;
 }
 
-const List1: React.SFC<ItemsProps> = ({ keyword, history }) => {
+const List1: React.FC<ItemsProps> = ({ keyword = "redux" }) => {
   // function App() {
   const [data, setData] = useState({ hits: [] });
 

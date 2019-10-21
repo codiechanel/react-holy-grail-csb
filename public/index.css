@@ -33,9 +33,12 @@ body {
 }
 
 #root {
-  /* flex direction don't matter */
   display: flex;
   flex: 1;
+  /* flex direction should be row since it it the parent of Left and Right Section... */
+
+  /* optional */
+  justify-content: space-between;
 
   /* background-color: rgb(95, 89, 102); */
 }
