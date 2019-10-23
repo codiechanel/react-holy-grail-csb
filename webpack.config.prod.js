@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+    .BundleAnalyzerPlugin;
 const path = require('path')
 
 /* const autoprefixer = require('autoprefixer')
@@ -13,31 +15,36 @@ const postCSSLoaderOptions = {
   ],
 } */
 module.exports = {
-  mode: 'production',
-  entry: './src/index.tsx',
-  output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
-  },
-  resolve: {
-    // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: ['.ts', '.tsx', '.js', '.json'],
-  },
-  module: {
-    rules: [
+    // plugins: [new BundleAnalyzerPlugin()],
+    mode: 'production',
+    entry: './src/index.tsx',
+    output: {
+        path: path.resolve(__dirname, 'public'),
+        filename: 'bundle.js',
+    },
+    resolve: {
+        alias: {
+            moment: 'dayjs',
+            "@ant-design/icons/lib/dist$": path.resolve(__dirname, "./src/icons.js")
+        },
+        // Add '.ts' and '.tsx' as resolvable extensions.
+        extensions: ['.ts', '.tsx', '.js', '.json'],
+    },
+    module: {
+        rules: [
 
-      {
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
-      },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader'
+            },
 
-    ],
-  },
-  /* externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-    'prop-types': 'PropTypes',
-    // firebase: 'firebase',
-    'chart.js': 'Chart',
-  }, */
+        ],
+    },
+    /* externals: {
+      react: 'React',
+      'react-dom': 'ReactDOM',
+      'prop-types': 'PropTypes',
+      // firebase: 'firebase',
+      'chart.js': 'Chart',
+    }, */
 }

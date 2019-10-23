@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+    .BundleAnalyzerPlugin;
 const path = require("path");
 
 /* const autoprefixer = require('autoprefixer')
@@ -25,6 +27,10 @@ module.exports = {
     // publicPath: "/public/"
   },
   resolve: {
+    alias: {
+      moment: 'dayjs',
+      "@ant-design/icons/lib/dist$": path.resolve(__dirname, "./src/icons.js")
+    },
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
