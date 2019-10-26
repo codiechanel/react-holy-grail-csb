@@ -1,6 +1,7 @@
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-    .BundleAnalyzerPlugin;
-const path = require("path");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
+
+const path = require('path')
 
 /* const autoprefixer = require('autoprefixer')
 const postCSSLoaderOptions = {
@@ -18,27 +19,27 @@ const postCSSLoaderOptions = {
 module.exports = {
   // plugins: [new BundleAnalyzerPlugin()],
   watch: true,
-  devtool: "source-map",
-  mode: "development",
-  entry: "./src/index.tsx",
+  devtool: 'source-map',
+  mode: 'development',
+  entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
     // publicPath: "/public/"
   },
   resolve: {
     alias: {
       moment: 'dayjs',
-      "@ant-design/icons/lib/dist$": path.resolve(__dirname, "./src/icons.js")
+      '@ant-design/icons/lib/dist$': path.resolve(__dirname, './src/icons.js')
     },
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".json"]
+    extensions: ['.ts', '.tsx', '.js', '.json']
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: "ts-loader"
+        loader: 'ts-loader'
       }
     ]
   }
@@ -52,4 +53,4 @@ module.exports = {
     // firebase: 'firebase',
     'chart.js': 'Chart',
   }, */
-};
+}
